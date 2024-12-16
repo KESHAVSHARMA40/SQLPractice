@@ -9,3 +9,8 @@ select * from Employees where Department = "IT";
 update Employees
 set salary = 60000
 where Name = "Charlie";
+set autocommit = off;
+commit;
+delete from Employees
+where Name = "Alice";
+rollback;
