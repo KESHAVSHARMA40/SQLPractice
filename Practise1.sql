@@ -6,3 +6,6 @@ Insert into Employees (EmployeeID, Name, Age, Department, Salary) Values ( 1, "A
 select * from Employees;
 select Name, Department from Employees;
 select * from Employees where Department = "IT";
+update Employees
+set salary = 60000
+where Name = "Charlie";
