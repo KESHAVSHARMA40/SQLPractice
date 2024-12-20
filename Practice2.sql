@@ -27,5 +27,15 @@ where FirstName = "John";
 ALTER TABLE CrewMembers
 Add Email VARCHAR(100);
 
-INSERT INTO CrewMembers (Email)
-VALUES ();
+UPDATE CrewMembers 
+SET Email = 'john.smith@example.com'
+WHERE CrewID =1;
+UPDATE CrewMembers Set Email = 'emily.johnson@example.com' WHERE CrewID =2;
+UPDATE CrewMembers Set Email = 'michael.brown@example.com' WHERE CrewID =3;
+UPDATE CrewMembers Set Email = 'sarah.davis@example.com' WHERE CrewID =4;
+UPDATE CrewMembers Set Email = 'david.wilson@example.com' WHERE CrewID =5;
+UPDATE CrewMembers Set Email = 'laura.taylor@example.com' WHERE CrewID =6;
+UPDATE CrewMembers Set Email = 'james.anderson@example.com' WHERE CrewID =7;
+UPDATE CrewMembers Set Email = 'anna.martinez@example.com' WHERE CrewID =8;
+UPDATE CrewMembers Set Email = 'robert.thomas@example.com' WHERE CrewID =9;
+UPDATE CrewMembers Set Email = 'sophia.moore@example.com' WHERE CrewID =10;
