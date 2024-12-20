@@ -20,5 +20,15 @@ UPDATE students
 SET cgpa = 3.6
 WHERE studentID = 3;
 
+UPDATE students
+SET cgpa = 2.0
+WHERE studentID = 4;
+
 ALTER TABLE employees
 MODIFY cgpa DECIMAL NOT NULL;
+
+SELECT * FROM students;
+SET AUTOCOMMIT = OFF;
+COMMIT;
+
+ALTER TABLE students ADD CONSTRAINT student_cgpa CHECK (cgpa >= 1.0);
