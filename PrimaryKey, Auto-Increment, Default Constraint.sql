@@ -13,3 +13,6 @@ VALUES ('john.doe@example.com', 'John Doe', 'Manager'),
 SET AUTOCOMMIT = off;
 ROLLBACK;
 COMMIT;
+
+ALTER TABLE Teachers
+ADD Date_Of_Joining DATETIME DEFAULT Now();
